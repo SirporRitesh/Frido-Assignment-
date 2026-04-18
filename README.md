@@ -17,6 +17,8 @@
 
 A fully dynamic, theme-switching Valentine's Day landing page built for **Frido**, a D2C health and wellness brand. The page showcases curated gift collections across multiple lifestyle categories and adapts its entire visual identity in real-time based on the shopper's relationship status — no page reload required.
 
+> **TODO:** Replace the placeholder links below with the actual URLs before sharing this README.
+
 | Resource | Link |
 |---|---|
 | 🌐 Live Page | _[Add Live URL here]_ |
@@ -38,7 +40,7 @@ A fully dynamic, theme-switching Valentine's Day landing page built for **Frido*
 ## 2. Features & UI/UX
 
 ### 🎯 Dual-Mode Experience
-- **Couple Mode** — warm, romantic colour palette with a dedicated hero video and curated "couples" product grid.
+- **Couple Mode** — warm, romantic color palette with a dedicated hero video and curated "couples" product grid.
 - **Single Mode** — dark, bold aesthetic with its own hero video and an independently filtered product grid.
 - A single toggle seamlessly crossfades between both modes without a page reload, preserving scroll position and filter state.
 
@@ -77,7 +79,7 @@ State variable: pageMode  ("couple" | "single")
 | Toggle → Couple | `pageMode = "couple"` | Hero video A fades in, Hero video B fades out, Couple product grid becomes visible |
 | Toggle → Single | `pageMode = "single"` | Hero video B fades in, Hero video A fades out, Single product grid becomes visible |
 
-All UI bindings — colours, typography tokens, video sources, grid visibility, and CTA copy — are **bound to `pageMode`** as the single source of truth, eliminating duplicated logic.
+All UI bindings — colors, typography tokens, video sources, grid visibility, and CTA copy — are **bound to `pageMode`** as the single source of truth, eliminating duplicated logic.
 
 ### Hero Video Crossfade
 Both hero videos are rendered in the DOM simultaneously and stacked via absolute positioning. Opacity is bound to `pageMode`, producing a CSS-driven crossfade with zero JavaScript overhead.
